@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap");
+
+#projects-title {
+  text-align: center;
+  margin: 0 0 70px;
+  font-family: "The Girl Next Door", cursive;
+  font-size: 50px;
+}
+
+.all-projects-cards {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.projects-card {
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  position: relative;
+  display: flex;
+}
+
+.projects-pic {
+  display: block;
+  height: 300px;
+  display: flex;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  transition: 0.5s ease;
+  transform: translate(0, 0);
+  background: rgba(132, 121, 156, 0.829);
+}
+
+.projects-card:hover .overlay {
+  opacity: 1;
+}
+
+.content {
+  position: absolute;
+  width: 90%;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: whitesmoke;
+
+  font-size: 20px;
+}
+
+.content h2 {
+  font-size: 35px;
+}

@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Unkempt:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gaegu&display=swap");
+
+.App {
+  background: radial-gradient(ellipse at bottom, #211933 0%, #090a0f 100%);
+  color: whitesmoke;
+  height: 100vh;
+}
+
+/********************************
+-           NAVBAR
+********************************/
+
+header {
+  padding: 1.5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#name-title {
+  font-size: 55px;
+  margin-left: 20px;
+  font-family: "Gaegu", cursive;
+}
+
+#name-title a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+#name-title:hover {
+  filter: invert(49%) sepia(8%) saturate(1145%) hue-rotate(217deg)
+    brightness(99%) contrast(86%);
+  transition: filter 0.5s;
+}
+
+#job-title {
+  margin-left: 130px;
+  font-size: 20px;
+}
+
+.text-box {
+  font-size: 20px;
+  color: #84799c;
+}
+
+#nav-bar-menu {
+  display: flex;
+}
+
+.nav-item {
+  margin: 20px 10px;
+  margin-right: 30px;
+  font-size: 20px;
+}
+
+li {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 3px;
+}
+
+li a {
+  text-decoration: none;
+  color: whitesmoke;
+  padding-bottom: 10px;
+}
+
+li:last-child {
+  margin-right: 25px;
+}
+
+li:after {
+  content: "";
+  display: block;
+  margin: auto;
+  margin-bottom: 2px;
+  height: 2px;
+  width: 0px;
+  background: transparent;
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+li:hover:after {
+  width: 100%;
+  background: #84799c;
+}
+
+/********************************
+-          CONTENT
+********************************/
+
+.homepage-container {
+  width: 100%;
+  display: flex;
+  border-bottom: solid white 1px;
+  justify-content: center;
+  margin-bottom: 10%;
+}
+
+.cat-anim {
+  max-width: 500px;
+}
+
+/********************************
+-           FOOTER
+********************************/
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 1%;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#github {
+  margin-right: 20px;
+}
+
+#github:hover {
+  filter: invert(49%) sepia(8%) saturate(1145%) hue-rotate(217deg)
+    brightness(99%) contrast(86%);
+  transition: filter 0.3s, transform 0.5s ease;
+
+  transform: translateY(-5px);
+}
+
+#linkedin {
+  margin-left: 20px;
+}
+
+#linkedin:hover {
+  filter: invert(49%) sepia(8%) saturate(1145%) hue-rotate(217deg)
+    brightness(99%) contrast(86%);
+  transition: filter 0.3s, transform 0.5s ease;
+
+  transform: translateY(-5px);
+}
