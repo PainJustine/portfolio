@@ -148,34 +148,30 @@ footer {
   }
 
   h1#name-title {
-    margin-left: 20px;
-    padding-top: 20px;
-    font-size: 45px;
+    margin-left: 0;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
   }
 
   #nav-bar-menu {
-    flex-direction: column;
-    left: 0;
-    padding: 0;
-    margin-top: 50px;
+    margin-top: 7%;
+    padding-left: 30%;
   }
 
   .nav-item {
-    margin: 0;
-    padding: 10px;
     font-size: 17px;
   }
 
   h2#job-title {
-    margin: 15px;
-    margin-top: 80px;
-    font-size: 20px;
+    margin: 0 5%;
+    font-size: 18px;
   }
 
   .cat-anim {
-    max-height: 150px;
+    max-height: 170px;
     position: fixed;
-    bottom: 170px;
+    bottom: 20%;
   }
 
   .homepage-container {
@@ -187,8 +183,7 @@ footer {
     margin-bottom: 20px;
   }
 
-  .Typist {
-    margin: 0;
-    padding: 0;
+  .text-box {
+    font-size: 12.8px;
   }
 }

@@ -18,7 +18,7 @@ class Navbar extends React.Component {
             <Link to="/">Justine PAIN</Link>
           </h1>
           <h2 id="job-title">
-            Développeuse web et web-mobile
+            Développeuse web et web mobile
             <Typetext />
           </h2>
         </section>
