@@ -49,6 +49,7 @@
     max-width: 200px;
     height: 250px;
     margin: 0 25%;
+    order: 1;
   }
 
   .profile-container {
@@ -66,6 +67,6 @@
 
   #presentation {
     max-width: 85%;
-    margin: 5% 7%;
+    margin: 0 7%;
   }
 }
