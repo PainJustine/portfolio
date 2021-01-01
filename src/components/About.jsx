@@ -31,7 +31,7 @@ class About extends React.Component {
           <h2 id="competences">Mes compétences :</h2>
           <p>
             Compétences en développement : HTML/CSS | JavaScript | React |
-            Node.Js | MySQL
+            Node.Js | MySQL | Express
           </p>
           <p id="competences-right">Conception graphique : Photoshop</p>
           <p>
