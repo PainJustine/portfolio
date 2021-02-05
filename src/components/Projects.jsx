@@ -24,7 +24,7 @@ export default class Projects extends React.Component {
         <section className="all-projects-cards">
           {projects.map((project, { id }) => (
             <div className="projects-card" key={project.id}>
-              <a href="https://papilles-voyageuses.netlify.app/index.html">
+              <a href={project.link}>
                 <img
                   className="projects-pic"
                   alt="Imprim Ecran de l'application"
@@ -33,7 +33,7 @@ export default class Projects extends React.Component {
                 <div className="overlay">
                   <div className="content">
                     <h2>{project.name}</h2>
-                    <p>{project.technos}</p>
+                    <p id="project-technos">{project.technos}</p>
                     <p>{project.description}</p>
                   </div>
                 </div>

@@ -19,11 +19,12 @@
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
   position: relative;
   display: flex;
+  margin: 25px 0;
 }
 
 .projects-pic {
   height: 320px;
-  width: 530px;
+  width: 550px;
   display: flex;
 }
 
@@ -38,11 +39,16 @@
   width: 100%;
   transition: 0.5s ease;
   transform: translate(0, 0);
-  background: rgba(132, 121, 156, 0.829);
+  background: rgba(132, 121, 156, 0.88);
 }
 
 .projects-card:hover .overlay {
   opacity: 1;
+}
+
+#project-technos {
+  font-family: "The Girl Next Door", cursive;
+  font-weight: bold;
 }
 
 .content {
