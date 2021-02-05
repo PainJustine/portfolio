@@ -1,6 +1,6 @@
 import React from "react";
 import "../components/About.css";
-import ProfilePic from "../assets/PhotoCV.jpg";
+import ProfilePic from "../assets/PhotoCVoptimisée-min.jpg";
 
 class About extends React.Component {
   constructor(props) {

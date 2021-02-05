@@ -1,8 +1,11 @@
 const express = require("express");
+const cors = require("cors");
 const connection = require("./connection");
 
-const port = 3000;
+const port = 5000;
 const app = express();
+
+app.use(cors());
 
 app.use(express.json());
 
@@ -35,10 +38,10 @@ app.get("/api/projets/:id", (req, res) => {
 
 //Route permettant d'ajouter un projet à la base de données
 app.post("/api/projets", (req, res) => {
-  const { name, technos, comments } = req.body;
+  const { name, technos, description, picture } = req.body;
   connection.query(
-    "INSERT INTO projets(name, technos, comments) VALUES(?, ?, ?)",
-    [name, technos, comments],
+    "INSERT INTO projets(name, technos, description, picture) VALUES(?, ?, ?, ?)",
+    [name, technos, description, picture],
     (err, results) => {
       if (err) {
         console.log(err);

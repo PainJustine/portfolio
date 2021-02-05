@@ -1,39 +1,46 @@
 import React from "react";
+import axios from "axios";
 import "../App.css";
 import "../components/Projects.css";
-import HearthstonePic from "../assets/hearthstone-pic.JPG";
-import PapillesPic from "../assets/papilles-pic.JPG";
-import Adopt1Gueux from "../assets/adopt1gueux-pic.JPG";
 
-class Projects extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      active: props.active,
-    };
+export default class Projects extends React.Component {
+  state = {
+    projects: [],
+  };
+
+  componentDidMount() {
+    axios.get("http://localhost:5000/api/projets").then((res) => {
+      const projects = res.data;
+      this.setState({ projects });
+    });
   }
+
   render() {
+    const { projects } = this.state;
     return (
       <main className="projects-container">
         <h1 id="projects-title">Mes réalisations</h1>
+
         <section className="all-projects-cards">
-          <div className="projects-card">
-            <a href="https://papilles-voyageuses.netlify.app/index.html">
-              <img
-                className="projects-pic"
-                alt="Imprim Ecran du site Les papilles voyageuses"
-                src={PapillesPic}
-              />
-              <div className="overlay">
-                <div className="content">
-                  <h2 className="projects-title">Les papilles voyageuses</h2>
-                  Blog de recettes de cuisine du monde développé en HTML/CSS et
-                  JavaScript dans le cadre du premier projet de ma formation
+          {projects.map((project, { id }) => (
+            <div className="projects-card" key={project.id}>
+              <a href="https://papilles-voyageuses.netlify.app/index.html">
+                <img
+                  className="projects-pic"
+                  alt="Imprim Ecran de l'application"
+                  src={project.picture}
+                />
+                <div className="overlay">
+                  <div className="content">
+                    <h2>{project.name}</h2>
+                    <p>{project.technos}</p>
+                    <p>{project.description}</p>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </div>
-          <div className="projects-card">
+              </a>
+            </div>
+          ))}
+          {/* <div className="projects-card">
             <a href="https://adopte1gueux.netlify.app/">
               <img
                 className="projects-pic"
@@ -66,11 +73,9 @@ class Projects extends React.Component {
                 </div>
               </div>
             </a>
-          </div>
+          </div> */}
         </section>
       </main>
     );
   }
 }
-
-export default Projects;
