@@ -1,5 +1,5 @@
 .App {
-  height: 150vh;
+  height: 100%;
 }
 
 .profile-container {
@@ -63,10 +63,6 @@
 
   .name-job-title {
     display: flex;
-  }
-
-  .App {
-    height: 200vh;
   }
 
   #presentation {

@@ -22,11 +22,10 @@ class Typetext extends React.Component {
       <div className="text-box">
         {this.state.typing && (
           <Typist onTypingDone={this.done} cursor={{ show: true, blink: true }}>
-            junior {""}
             <Typist.Backspace count={0} delay={800} />à la recherche d'une
             alternance pour avril 2021
             <Typist.Backspace count={47} delay={1000} />
-            : contactez-moi ! ☻
+            contactez-moi ! ☻
             <Typist.Backspace count={40} delay={1000} />
           </Typist>
         )}

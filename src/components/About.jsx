@@ -16,10 +16,10 @@ class About extends React.Component {
           <h2>Hello !</h2>
           <p>
             Je m'appelle Justine et j'habite à Colomiers, dans la périphérie
-            Toulousaine. Je suis actuellement en formation à la Wild Code School
-            afin de devenir développeuse web. Je souhaite par la suite
-            approfondir mes connaissances et gagner en expérience en intégrant
-            une formation complémentaire en alternance.
+            Toulousaine. Ma formation de développeuse web à la Wild Code School
+            s'achevant très bientôt, je souhaite désormais continuer mon
+            apprentissage en intégrant une formation de designer web en
+            alternance.
           </p>
           <p id="presentation-right">
             Curieuse et créative, je suis tout particulièrement soucieuse de
@@ -33,7 +33,7 @@ class About extends React.Component {
             Compétences en développement : HTML/CSS | JavaScript | React |
             Node.Js | MySQL | Express
           </p>
-          <p id="competences-right">Conception graphique : Photoshop</p>
+          <p id="competences-right">Conception graphique : Photoshop | UI/UX</p>
           <p>
             Gestion de projet : Méthode agile SCRUM | Git/Github | Figma |
             Travail en remote

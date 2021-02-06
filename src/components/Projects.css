@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap");
 
+.App {
+  height: 100%;
+}
+
 #projects-title {
   text-align: center;
   margin: 0 0 70px;
@@ -16,7 +20,7 @@
 }
 
 .projects-card {
-  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  /* box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px; */
   position: relative;
   display: flex;
   margin: 25px 0;
