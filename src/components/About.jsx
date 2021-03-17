@@ -17,9 +17,8 @@ class About extends React.Component {
           <p>
             Je m'appelle Justine et j'habite à Colomiers, dans la périphérie
             Toulousaine. Ma formation de développeuse web à la Wild Code School
-            s'achevant très bientôt, je souhaite désormais continuer mon
-            apprentissage en intégrant une formation de designer web en
-            alternance.
+            étant terminée, je souhaite désormais continuer mon apprentissage en
+            intégrant une formation de designer web en alternance.
           </p>
           <p id="presentation-right">
             Curieuse et créative, je suis tout particulièrement soucieuse de
