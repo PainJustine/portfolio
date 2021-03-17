@@ -7,7 +7,7 @@ import Adopt1Gueux from "../assets/Adopt1Gueux-min.JPG";
 import HearthstoneFinder from "../assets/HearthstoneFinder-min.JPG";
 import LesPapillesVoyageuses from "../assets/LesPapillesVoyageuses-min.JPG";
 import MémoiresElephant from "../assets/MémoiresElephant-min.JPG";
-import MyMoodMarket from "../assets/MyMoodMarket-min.JPG";
+// import MyMoodMarket from "../assets/MyMoodMarket-min.JPG";
 
 export default class Projects extends React.Component {
   state = {
